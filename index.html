@@ -1,4 +1,212 @@
-hello world, noier.vip
-
-.LOG
-timenow
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>理查德工程师的个人博客</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            color: #f1c40f;
+        }
+        
+        main {
+            display: flex;
+            margin: 2rem 0;
+        }
+        
+        .blog-posts {
+            flex: 3;
+            margin-right: 2rem;
+        }
+        
+        aside {
+            flex: 1;
+        }
+        
+        .post {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .post h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .post-meta {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .read-more {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .read-more:hover {
+            text-decoration: underline;
+        }
+        
+        .sidebar-widget {
+            background-color: white;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .sidebar-widget h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>理查德工程师的个人博客</h1>
+            <p>分享技术、生活和思考</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">技术</a></li>
+                <li><a href="#">生活</a></li>
+                <li><a href="#">读书</a></li>
+                <li><a href="#">关于我</a></li>
+                <li><a href="#">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <main>
+            <section class="blog-posts">
+                <article class="post">
+                    <h2><a href="#">如何学习前端开发</a></h2>
+                    <div class="post-meta">发布于 2023年5月15日 | 分类: <a href="#">技术</a></div>
+                    <p>前端开发是一个不断发展的领域，学习前端需要掌握HTML、CSS和JavaScript三大基础技术。本文将分享我学习前端开发的经验和资源推荐...</p>
+                    <a href="#" class="read-more">阅读更多</a>
+                </article>
+                
+                <article class="post">
+                    <h2><a href="#">我的2023年读书计划</a></h2>
+                    <div class="post-meta">发布于 2023年5月10日 | 分类: <a href="#">读书</a></div>
+                    <p>每年我都会制定一个读书计划，今年我打算阅读30本书，涵盖科技、文学、历史和心理学等多个领域。这篇文章将分享我的书单和阅读方法...</p>
+                    <a href="#" class="read-more">阅读更多</a>
+                </article>
+                
+                <article class="post">
+                    <h2><a href="#">在家办公的效率技巧</a></h2>
+                    <div class="post-meta">发布于 2023年5月5日 | 分类: <a href="#">生活</a></div>
+                    <p>远程工作已经成为新常态，但如何在家保持高效率是许多人面临的挑战。本文将分享我在家办公两年多来总结的10个提高效率的技巧...</p>
+                    <a href="#" class="read-more">阅读更多</a>
+                </article>
+            </section>
+            
+            <aside>
+                <div class="sidebar-widget">
+                    <h3>关于我</h3>
+                    <p>我是一个热爱技术和写作的开发者，喜欢分享知识和经验。工作之余，我喜欢阅读、旅行和摄影。</p>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3>分类</h3>
+                    <ul>
+                        <li><a href="#">技术 (15)</a></li>
+                        <li><a href="#">生活 (8)</a></li>
+                        <li><a href="#">读书 (5)</a></li>
+                        <li><a href="#">旅行 (3)</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-widget">
+                    <h3>订阅</h3>
+                    <p>订阅我的博客，获取最新文章通知。</p>
+                    <form>
+                        <input type="email" placeholder="您的邮箱地址" style="width: 100%; padding: 8px; margin-bottom: 10px;">
+                        <button type="submit" style="width: 100%; padding: 8px; background-color: #3498db; color: white; border: none;">订阅</button>
+                    </form>
+                </div>
+            </aside>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 理查德工程师的个人博客. 保留所有权利.</p>
+            <div style="margin-top: 1rem;">
+                <a href="#" style="color: white; margin: 0 10px;">微信公众号</a>
+                <a href="#" style="color: white; margin: 0 10px;">小红书</a>
+                <a href="#" style="color: white; margin: 0 10px;">微博</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
